@@ -17,7 +17,8 @@ void print_diamond(char start) {
 int main (int argc, char const *argv[]) {
     if(argc <= 1) {
         print_diamond('Z');
+    } else {
+        print_diamond((char)argv[1][0]);
     }
-    print_diamond((char)argv[1][0]);
     return 0;
 }
