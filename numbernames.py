@@ -48,8 +48,7 @@ extended_tens = {2: 'twenty',
                  6: 'sixty',
                  7: 'seventy',
                  8: 'eighty',
-                 9: 'ninety',
-                 10: 'hundred'}
+                 9: 'ninety'}
 
 extended_huge_numbers = OrderedDict([(10 ** 24, "septillion"),
                                      (10 ** 21, "sextillion"),
@@ -104,7 +103,6 @@ def extend(number):
     if tens > 1:
         answer += '%s' % extended_tens[tens]
         answer += ' ' if singles else ''
-
     if tens == 1:
         singles += tens * 10
         answer += '%s' % extended_num[singles]
